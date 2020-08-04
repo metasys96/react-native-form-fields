@@ -84,6 +84,7 @@ const onChangeRadio = (selectedObj: any) => {
 
 
 | Name           | Description    | Type           | Default        |
+|-----|-----|-----|-----|
 | items          | Field Items Array   | Array     | [ {id: 1, value: 'Option 1'}, {id: 2, value: 'Option 2'}    |
 | size           | Field Size     | Number         |-|
 | isVertical     | Fields' Direction       | Boolean        | false          |
@@ -111,6 +112,7 @@ import CheckBox from 'react-native- form-fields'
 
 
 | Name           | Description    | Type           | Default        |
+|-----|-----|-----|-----|
 | isChecked      | Set Checkbox Checked   | Boolean        | false          |
 | containerBgColor             | Field Background Color | Number         |-|
 | containerFlexDirection       | Fields' Direction        | String         | row            |
@@ -174,6 +176,7 @@ const onChangeDropdown = (value: any) => {
 **Properties**
 
 | Name           | Description    | Type           | Default        |
+|-----|-----|-----|-----|
  | items                         |Field Items Array                              |Array             |-
   |useNativeAndroidPickerStyle   |Native Android Dropdown                        |Boolean           |false
   |style                         |Different styles                               |Object            |-
@@ -218,6 +221,7 @@ const onChangeText = (text: string) => {
 
 
 | Name           | Description    | Type           | Default        |
+|-----|-----|-----|-----|
 | label            | Field Label      | String   |-|
 | labelColor       | Field Label Color     | String   | black            |
 | labelStyle       | Field Label Style     | Object   |-|
@@ -276,6 +280,7 @@ const onChangeText = (text: string) => {
 
 
 | Name           | Description    | Type           | Default        |
+|-----|-----|-----|-----|
 | icon             | Field Icon       | String   | { size: 20,name: 'user', type: 'font-awesome'}       |
 | iconColor        | Field Icon Color | String   | black            |
 | value            | Field Value      | String   |                  |
@@ -358,29 +363,30 @@ const onChangeText = (text: string) => {
 **Properties**
 
  | Name           | Description    | Type           | Default        |
-  |isMultiline                   |Allow Multiple Lines                              |Boolean    |false|
-  |defaultText                   |Prefix or Suffix Text                             |String     |-|
-  |defaultTextPosition           |Position Of The Default Text                      |String     |left|
-  |value                         |Field Value                                       |String    | -|
-  |editable                      |Set Field Editable                                |Boolean    |true|
-  |isRequired                    |Display Asterisk Symbol                           |Boolean    |false|
-  |animationDuration             |Animation Duration                                |Number     |20|
-  |isError                       |To Display error                                  |Boolean    |false|
-  |errorText                     |Display Error Text                                |String    | -|
-  |errorColor                    |Error Text Color                                  |String     |red|
-  |tintColor                     |Field Color On Focus                              |String     |'rgb(0,100,234)'|
-  |rootColor                     |Field Color When Not Focused                      |String     |'rgba(0, 0, 0, .87)'|
-  |textColor                     |Text Color                                        |String     |'rgba(0, 0, 0, .87)|
-  |clearTextOnFocus              |Clear The Text When Focused                       |Boolean    |false|
-  |fontSize                      |Font Size Of The Text Input When Not Focused      |Number     |16|
-  |errorFontSize                 |Error Text Font Size                              |Number     |12|
-  |activeFontSize                |Font Size Of The Text Input When Focused          |Number     |12|
-  |autoCapitalize                |Capitalize Text,Sentences,Words,Charachters       |String     |'none'|
-  |characterLimit                |Charachter Limit For The Text Field               |Number     |-|
-  |inputContainerOverrideStyle   |Set Input Container Style                         |Object     |-|
-  |inputOverrideStyle            |Set Text Input Style                              |Object     |-|
-  |onChange                      |Change Text callback                              |Function   |-|
-  |textInputProps                |Props for Text Input                              |Props      |-|
+ |-----|-----|-----|-----|
+  | isMultiline                   | Allow Multiple Lines                              | Boolean    | false |
+  | defaultText                   | Prefix or Suffix Text                             | String     | - |
+  | defaultTextPosition           | Position Of The Default Text                      | String     | left |
+  | value                         | Field Value                                       | String    | - |
+  | editable                      | Set Field Editable                                | Boolean    | true |
+  | isRequired                    | Display Asterisk Symbol                           | Boolean    | false |
+  | animationDuration             | Animation Duration                                | Number     | 20 |
+  | isError                       | To Display error                                  | Boolean    | false |
+  | errorText                     | Display Error Text                                | String    | - |
+  | errorColor                    | Error Text Color                                  | String     | red |
+  | tintColor                     | Field Color On Focus                              | String     | 'rgb(0,100,234)' |
+  | rootColor                     | Field Color When Not Focused                      | String     | 'rgba(0, 0, 0, .87)' |
+  | textColor                     | Text Color                                        | String     | 'rgba(0, 0, 0, .87) |
+  | clearTextOnFocus              | Clear The Text When Focused                       | Boolean    | false |
+  | fontSize                      | Font Size Of The Text Input When Not Focused      | Number     | 16 |
+  | errorFontSize                 | Error Text Font Size                              | Number     | 12 |
+  | activeFontSize                | Font Size Of The Text Input When Focused          | Number     | 12 |
+  | autoCapitalize                | Capitalize Text,Sentences,Words,Charachters       | String     | 'none' |
+  | characterLimit                | Charachter Limit For The Text Field               | Number     | - |
+  | inputContainerOverrideStyle   | Set Input Container Style                         | Object     | - |
+  | inputOverrideStyle            | Set Text Input Style                              | Object     | - |
+  | onChange                      | Change Text callback                              | Function   | - |
+  | textInputProps                | Props for Text Input                              | Props      | - |
 
 **Contribution**
 
@@ -406,3 +412,5 @@ MetaSys Software Pvt. Ltd. / [@metasys96](https://github.com/metasys96)
 
 [MIT](./LICENSE)
 Copyright 2020 MetaSys Software Pvt. Ltd. All rights reserved.
+
+
