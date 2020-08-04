@@ -20,7 +20,7 @@ quickly. The documentation below will help you to easily integrate with
 your React Native projects. This version is compatible with react-native
 0.60 and above.
 
-Content
+## Content
 
 1.  Installation
 
@@ -50,7 +50,7 @@ import {
 
   CustomTextField,
 
-  DropDown } from \'react-native- form-fields\';
+  DropDown } from 'react-native- form-fields';
 
 ```
 
@@ -64,35 +64,35 @@ Add react-native-form-fields to your JS file.
  **RadioButton**
 
 ```
-import RadioButton from \'react-native- form-fields'
+import RadioButton from 'react-native- form-fields'
 
-const onChangeRadio = (selectedObj: any) =\> {
+const onChangeRadio = (selectedObj: any) => {
 
     console.log('Selected item = ', selectedObj.value)
 
   };
 
-\<RadioButton
+<RadioButton
 
-items={\[{id:'item1',value:'male'},{id:'item2',value:'female'}\]}
+  items={[{id:'item1',value:'male'},{id:'item2',value:'female'}]}
 
-onChange={onChangeRadio}
+  onChange={onChangeRadio}
 
-/\>
+/>
 ```
 **Properties**
 
-+----------------+----------------+----------------+----------------+
+|----------------|----------------|----------------|----------------|
 | Name           | Description    | Type           | Default        |
-+================+================+================+================+
-| items          | Field Items    | Array          | \[             |
+|================|================|================|================|
+| items          | Field Items    | Array          | [              |
 |                | Array          |                | {id: 1,value:  |
-|                |                |                | \'Option 1\'}, |
+|                |                |                | 'Option 1'},   |
 |                |                |                |                |
 |                |                |                | {              |
-|                |                |                | id: 2,value: \ |
-|                |                |                | 'Option 2\'}\] |
-+----------------+----------------+----------------+----------------+
+|                |                |                | id: 2,value:   |
+|                |                |                | 'Option 2'}]   |
+|----------------|----------------|----------------|----------------|
 | size           | Field Size     | Number         | \-             |
 +----------------+----------------+----------------+----------------+
 | isVertical     | Fields'        | Boolean        | false          |
