@@ -2,6 +2,15 @@
 
 Documentation
 
+
+| Prop                     | Description                                                                                                                                                                               |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| *`getFontFamily`*      | Returns the font family that is currently used to retrieve icons as text. Usage: `const fontFamily = Icon.getFontFamily()`                                                                |
+| *`getImageSource`*     | Returns a promise that resolving to the source of a bitmap version of the icon for use with `Image` component et al. Usage: `const source = await Icon.getImageSource(name, size, color)` |
+| *`getImageSourceSync`* | Same as `getImageSource` but synchronous. Usage: `const source = Icon.getImageSourceSync(name, size, color)`                                                                              |
+| *`getRawGlyphMap`*     | Returns the raw glyph map of the icon set. Usage: `const glyphMap = Icon.getRawGlyphMap()`                                                                                                |
+| *`hasIcon`*            | Checks if the name is valid in current icon set. Usage: `const isNameValid = Icon.hasIcon(name)`  
+
 Cross-platform development is now an essential aspect of software
 development. Node Packet Manager, the online repository is a go to site
 for React Programmers. This is MetaSys' contribution based on challenges
