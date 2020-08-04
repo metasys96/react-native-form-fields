@@ -1,6 +1,6 @@
 # react-native-form-fields
 
-NPM Package -- Documentation
+Documentation
 
 Cross-platform development is now an essential aspect of software
 development. Node Packet Manager, the online repository is a go to site
