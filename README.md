@@ -2,15 +2,6 @@
 
 Documentation
 
-
-| Prop                     | Description                                                                                                                                                                               |
-| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| *`getFontFamily`*      | Returns the font family that is currently used to retrieve icons as text. Usage: `const fontFamily = Icon.getFontFamily()`                                                                |
-| *`getImageSource`*     | Returns a promise that resolving to the source of a bitmap version of the icon for use with `Image` component et al. Usage: `const source = await Icon.getImageSource(name, size, color)` |
-| *`getImageSourceSync`* | Same as `getImageSource` but synchronous. Usage: `const source = Icon.getImageSourceSync(name, size, color)`                                                                              |
-| *`getRawGlyphMap`*     | Returns the raw glyph map of the icon set. Usage: `const glyphMap = Icon.getRawGlyphMap()`                                                                                                |
-| *`hasIcon`*            | Checks if the name is valid in current icon set. Usage: `const isNameValid = Icon.hasIcon(name)`  
-
 Cross-platform development is now an essential aspect of software
 development. Node Packet Manager, the online repository is a go to site
 for React Programmers. This is MetaSys' contribution based on challenges
@@ -91,486 +82,219 @@ const onChangeRadio = (selectedObj: any) => {
 ```
 **Properties**
 
-|----------------|----------------|----------------|----------------|
+
 | Name           | Description    | Type           | Default        |
-|================|================|================|================|
-| items          | Field Items    | Array          | [              |
-|                | Array          |                | {id: 1,value:  |
-|                |                |                | 'Option 1'},   |
-|                |                |                |                |
-|                |                |                | {              |
-|                |                |                | id: 2,value:   |
-|                |                |                | 'Option 2'}]   |
-|----------------|----------------|----------------|----------------|
-| size           | Field Size     | Number         | \-             |
-+----------------+----------------+----------------+----------------+
-| isVertical     | Fields'        | Boolean        | false          |
-|                | Direction      |                |                |
-+----------------+----------------+----------------+----------------+
-| selectedValue  | Selected Field | Object         | \-             |
-+----------------+----------------+----------------+----------------+
-| onChange       | Change Radio   | Function       | \-             |
-|                | callback       |                |                |
-+----------------+----------------+----------------+----------------+
-| containerStyle | Field          | Object         | { f            |
-|                | Container      |                | lexDirection:  |
-|                | Style          |                | \'row\',justif |
-|                |                |                | yContent: \'ce |
-|                |                |                | nter\',  margi |
-|                |                |                | nRight: isVert |
-|                |                |                | ical : \'5%\'} |
-+----------------+----------------+----------------+----------------+
-| icon           | Field Icon     | Object         | {justif        |
-| ContainerStyle | Container      |                | yContent: \'ce |
-|                | Style          |                | nter\', shadow |
-|                |                |                | Color: \'rgba( |
-|                |                |                | 0,0,0, .2)\',s |
-|                |                |                | hadowOffset: { |
-|                |                |                |  height: 1, wi |
-|                |                |                | dth: 1 },shado |
-|                |                |                | wOpacity: 1,sh |
-|                |                |                | adowRadius: 1} |
-+----------------+----------------+----------------+----------------+
-| label          | Field Label    | Object         | {              |
-| ContainerStyle | Container      |                |  justifyConten |
-|                | Style          |                | t: \'center\'} |
-+----------------+----------------+----------------+----------------+
-| labelStyle     | Field Label    | Object         | {fontSize      |
-|                | Style          |                | : 20, paddingL |
-|                |                |                | eft: \'2%\',co |
-|                |                |                | lor: \'white\' |
-|                |                |                | }              |
-+----------------+----------------+----------------+----------------+
-| labelFontSize  | Field Label    | Number         | 20             |
-|                | Font Size      |                |                |
-+----------------+----------------+----------------+----------------+
-| labelColor     | Field Label    | String         | black          |
-|                | Font Color     |                |                |
-+----------------+----------------+----------------+----------------+
-| selectedIcon   | Selected Icon  | Object         | {              |
-|                |                |                |  size: 20, nam |
-|                |                |                | e: \'radio-but |
-|                |                |                | ton-checked\', |
-|                |                |                |  type: \'Mater |
-|                |                |                | ialIcons\',col |
-|                |                |                | or:\'black\' } |
-+----------------+----------------+----------------+----------------+
-| unSelectedIcon | Unselected     | Object         | { s            |
-|                | Icon           |                | ize: 20, name: |
-|                |                |                |  \'radio-butto |
-|                |                |                | n-unchecked\', |
-|                |                |                |  type: \'Mater |
-|                |                |                | ialIcons\',col |
-|                |                |                | or:\'black\' } |
-+----------------+----------------+----------------+----------------+
-| s              | Selected       | React Native   | \-             |
-| electedElement | Component      | Component      |                |
-+----------------+----------------+----------------+----------------+
-| unS            | Unselected     | React Native   | \-             |
-| electedElement | Component      | Component      |                |
-+----------------+----------------+----------------+----------------+
+| items          | Field Items Array   | Array     | [ {id: 1, value: 'Option 1'}, {id: 2, value: 'Option 2'}    |
+| size           | Field Size     | Number         |-|
+| isVertical     | Fields' Direction       | Boolean        | false          |
+| selectedValue  | Selected Field | Object         |-|
+| onChange       | Change Radio callback   | Function       |-|
+| containerStyle | Field Container Style        | Object         | { flexDirection: 'row', justifyContent: 'center', marginRight: isVertical: '5%'             |
+| icon ContainerStyle          | Field Icon Container Style     | Object         | {justifyContent: 'center', shadowColor: 'rgba(0,0,0, .2)', shadowOffset: { height: 1, width: 1 }, shadowOpacity: 1, shadowRadius: 1}        |
+| label ContainerStyle         | Field Label Container Style    | Object         | { justifyContent: 'center'}              |
+| labelStyle     | Field Label Style   | Object         | {fontSize: 20, paddingLeft: '2%',color: 'white'}      |
+| labelFontSize  | Field Label Font Size      | Number         | 20             |
+| labelColor     | Field Label Font Color    | String         | black          |
+| selectedIcon   | Selected Icon  | Object         | {size: 20, name: 'radio-button-checked',type: 'MaterialIcons',color:'black' }|
+| unSelectedIcon | Unselected Icon     | Object         | { size: 20, name:'radio-button-unchecked', type: 'MaterialIcons', color: 'black' }|
+| selectedElement | Selected Component      | React Native Component  |-|
+| unSelectedElement            | Unselected Component     | React Native Component   |-|
+
 
 **CheckBox**
 ```
-import CheckBox from \'react-native- form-fields'
+import CheckBox from 'react-native- form-fields'
 
-\<CheckBox label=\'Javascript\' isMarked={true}/\>
+<CheckBox label='Javascript' isMarked={true}/>
 ```
 **Properties**
 
-+----------------+----------------+----------------+----------------+
+
 | Name           | Description    | Type           | Default        |
-+================+================+================+================+
-| isChecked      | Set Checkbox   | Boolean        | false          |
-|                | Checked        |                |                |
-+----------------+----------------+----------------+----------------+
-| co             | Field          | Number         | \-             |
-| ntainerBgColor | Background     |                |                |
-|                | Color          |                |                |
-+----------------+----------------+----------------+----------------+
-| containe       | Fields'        | String         | row            |
-| rFlexDirection | Direction      |                |                |
-+----------------+----------------+----------------+----------------+
-| containerStyle | Field          | Object         | { f            |
-|                | Container      |                | lexDirection:  |
-|                | Style          |                | \'row\',justif |
-|                |                |                | yContent: \'ce |
-|                |                |                | nter\',  margi |
-|                |                |                | nRight: isVert |
-|                |                |                | ical : \'5%\'} |
-+----------------+----------------+----------------+----------------+
-| icon           | Field Icon     | Object         | {heig          |
-| ContainerStyle | Container      |                | ht: 20,justify |
-|                | Style          |                | Content: \'fle |
-|                |                |                | x-start\',shad |
-|                |                |                | owColor: \'rgb |
-|                |                |                | a(0,0,0, .2)\' |
-|                |                |                | ,shadowOffset: |
-|                |                |                |  { height: 1,  |
-|                |                |                | width: 1 },sha |
-|                |                |                | dowOpacity: 1, |
-|                |                |                |                |
-|                |                |                | sh             |
-|                |                |                | adowRadius: 1} |
-+----------------+----------------+----------------+----------------+
-| label          | Field Label    | Object         | { j            |
-| ContainerStyle | Container      |                | ustifyContent: |
-|                | Style          |                |  \'flex-end\'} |
-+----------------+----------------+----------------+----------------+
-| labelStyle     | Field Label    | Object         | { fo           |
-|                | Style          |                | ntSize:16, col |
-|                |                |                | or: \'black\'} |
-+----------------+----------------+----------------+----------------+
-| label          | Field label    | String         |                |
-+----------------+----------------+----------------+----------------+
-| labelFontSize  | Field Label    | Number         | 16             |
-|                | Font Size      |                |                |
-+----------------+----------------+----------------+----------------+
-| labelColor     | Field Label    | String         | black          |
-|                | Font Color     |                |                |
-+----------------+----------------+----------------+----------------+
-| onChange       | Change         | Function       | \-             |
-|                | checkbox       |                |                |
-|                | callback       |                |                |
-+----------------+----------------+----------------+----------------+
-| checkedIcon    | Checked Icon   | Object         | { s            |
-|                |                |                | ize: 20, name: |
-|                |                |                |  \'check-box-o |
-|                |                |                | utline\', type |
-|                |                |                | : \'material-c |
-|                |                |                | ommunity\',col |
-|                |                |                | or:\'black\' } |
-+----------------+----------------+----------------+----------------+
-| unCheckedIcon  | Unchecked Icon | Object         | { size:        |
-|                |                |                | 20, name: \'ch |
-|                |                |                | eckbox-blank-o |
-|                |                |                | utline\', type |
-|                |                |                | : \'material-c |
-|                |                |                | ommunity\',col |
-|                |                |                | or:\'black\' } |
-+----------------+----------------+----------------+----------------+
-| checkedElement | Checked        | React Native   | \-             |
-|                | Component      | Component      |                |
-+----------------+----------------+----------------+----------------+
-| un             | Unchecked      | React Native   | \-             |
-| CheckedElement | Component      | Component      |                |
-+----------------+----------------+----------------+----------------+
+| isChecked      | Set Checkbox Checked   | Boolean        | false          |
+| containerBgColor             | Field Background Color | Number         |-|
+| containerFlexDirection       | Fields' Direction        | String         | row            |
+| containerStyle | Field Container Style        | Object         | { flexDirection:'row',justifyContent: 'center',  marginRight: isVertical : '5%'}  |
+| icon ContainerStyle | Field Icon Container Style   | Object         | {height: 20,justifyContent: 'flex-start',shadowColor: 'rgba(0,0,0, .2)',shadowOffset:{ height: 1,width: 1 },shadowOpacity: 1,shadowRadius: 1}          |
+| label ContainerStyle | Field Label Container Style   | Object         | { justifyContent:'flex-end'} |
+| labelStyle     | Field Label Style   | Object         | { fontSize:16, color: 'black'}           |
+| label          | Field label    | String         |-|
+| labelFontSize  | Field Label Font Size     | Number         | 16             |
+| labelColor     | Field Label Font Color     | String         | black |
+| onChange       | Change checkbox callback        | Function       |-|
+| checkedIcon    | Checked Icon   | Object         | { size: 20, name: 'check-box-outline', type: 'material-community',color:'black' } |
+| unCheckedIcon  | Unchecked Icon | Object         | { size:20, name: 'checkbox-blank-outline', type: 'material-community',color:'black' } |
+| checkedElement | Checked Component       | React Native Component   |-|
+| unCheckedElement | Unchecked Component      | React Native Component   |-|
+
 
 **DropDown**
 ```
-import DropDown from \'react-native- form-fields'
+import DropDown from 'react-native- form-fields'
 
 const dropdownStyles = {
 
-      select: {color: \'white\'},
+      select: {color: 'white'},
 
-      modalViewBottom: {backgroundColor: \'pink\'},
+      modalViewBottom: {backgroundColor: 'pink'},
 
-      placeholder: {backgroundColor: \'yellow\'},
+      placeholder: {backgroundColor: 'yellow'},
 
-      modalViewMiddle: {backgroundColor: \'red\'},
+      modalViewMiddle: {backgroundColor: 'red'},
 
     };
 
-const onChangeDropdown = (value: any) =\> {
+const onChangeDropdown = (value: any) => {
 
-    console.log(\'selected value = \', value);
+    console.log('selected value = ', value);
 
   };
 
-\<PickerSelect
+<PickerSelect
 
-                onChange={onChangeDropdown}
+     onChange={onChangeDropdown}
 
-                style={dropdownStyles}
+     style={dropdownStyles}
 
-                items={\[
+     items={[
 
-                  {id: \'item1\', label: \'Apple\', value: \'Apple\'},
+             {id: 'item1', label: 'Apple', value: 'Apple'},
 
-                  {id: \'item2\', label: \'Ball\', value: \'Ball\'},
+             {id: 'item2', label: 'Ball', value: 'Ball'},
 
-                  {id: \'item3\', label: \'Cat\', value: \'Cat\'}
+             {id: 'item3', label: 'Cat', value: 'Cat'}
 
-                \]}
+            ]}
 
-                 selectedItem={{id: \'item3\', label: \'Cat\', value: \'Cat\'}}
+     selectedItem={{id: 'item3', label: 'Cat', value: 'Cat'}}
 
-              /\>
+/>
 ```
 
 **Properties**
 
-  name                          description                                    type              default
-  ----------------------------- ---------------------------------------------- ----------------- ------------------------------------------------------------------------
-  items                         Field Items Array                              Array             \-
-  useNativeAndroidPickerStyle   Native Android Dropdown                        Boolean           false
-  style                         Different styles                               Object            \-
-  modalProps                    Modal View Props (Only iOS)                    Props             \-
-  dropDownProps                 DropDown Props                                 Props             \-
-  disabled                      DropDown disabled for selection                Boolean           false
-  textInputProps                Field Text Input Props                         Props             \-
-  placeholderTextColor          Dropdown Placeholder Text Color                String            \#C7C7CD
-  placeholder                   Placeholder For DropDown                       Object            \-
-  selectText                    Default Text for Dropdown view                 String            Select
-  hideSelectBar                 Render Dropdown Select Button Bar (iOS only)   Boolean           Select
-  onChange                      Change Picker callback                         Function          \-
-  selectedItem                  Selected item in the Dropdown list             Object            
-  itemTextColor                 Items Text Color                               String            black
-  dropdownIcon                  DropDown Icon                                  Object            { size: 20, name: \'chevron-down\', type: \'entypo\',color:\'black\' }
-  fieldIcon                     DropDown Icon Component                        React Component   \-
+| Name           | Description    | Type           | Default        |
+ | items                         |Field Items Array                              |Array             |-
+  |useNativeAndroidPickerStyle   |Native Android Dropdown                        |Boolean           |false
+  |style                         |Different styles                               |Object            |-
+  |modalProps                    |Modal View Props (Only iOS)                    |Props             |-
+  |dropDownProps                 |DropDown Props                                 |Props             |-
+  |disabled                      |DropDown disabled for selection                |Boolean           |false
+  |textInputProps                |Field Text Input Props                         |Props             |-
+  |placeholderTextColor          |Dropdown Placeholder Text Color                |String            |#C7C7CD
+  |placeholder                   |Placeholder For DropDown                       |Object            |-
+  |selectText                    |Default Text for Dropdown view                 |String            |Select
+  |hideSelectBar                 |Render Dropdown Select Button Bar (iOS only)   |Boolean           |Select
+  |onChange                      |Change Picker callback                         |Function          |-
+  |selectedItem                  |Selected item in the Dropdown list             |Object            |
+  |itemTextColor                 |Items Text Color                               |String            |black
+  |dropdownIcon                  |DropDown Icon                                  |Object            |{ size: 20, name: 'chevron-down', type: 'entypo', color: 'black' }
+  |fieldIcon                     |DropDown Icon Component                        |React Component   |-
 
 **BasicTextField**
 ```
-import BasicTextField from \'react-native- form-fields'
+import BasicTextField from 'react-native- form-fields'
 
-const onChangeText = (text: string) =\> {
+const onChangeText = (text: string) => {
 
-    console.log(\'Field text = \',text);
+    console.log('Field text = ',text);
 
-setEmail(text);
+    setEmail(text);
 
   };
 
-\<BasicTextField
+<BasicTextField
 
-                  label={\'Email\'}
+  label='Email'
 
-                  value={this.state.email}
+  value={this.state.email}
 
-onChange={onChangeText}
+  onChange={onChangeText}
 
-                /\>
+/>
 ```
 
 **Properties**
 
-+------------------+------------------+----------+------------------+
-| name             | description      | type     | default          |
-+==================+==================+==========+==================+
-| label            | Field Label      | String   | \-               |
-+------------------+------------------+----------+------------------+
-| labelColor       | Field Label      | String   | black            |
-|                  | Color            |          |                  |
-+------------------+------------------+----------+------------------+
-| labelStyle       | Field Label      | Object   |                  |
-|                  | Style            |          |                  |
-+------------------+------------------+----------+------------------+
-| isRequired       | Display Asterisk | Boolean  | false            |
-|                  | Symbol           |          |                  |
-+------------------+------------------+----------+------------------+
-| a                | Asterisk Symbol  | Object   | { color: \'red\' |
-| steriskTextStyle | Style            |          | , fontSize: 16 } |
-+------------------+------------------+----------+------------------+
-| Value            | Field Value      | String   | \-               |
-+------------------+------------------+----------+------------------+
-| on               | Field Border     | String   | \'\#007AFE\'     |
-| FocusBorderColor | Color on focus   |          |                  |
-+------------------+------------------+----------+------------------+
+
+| Name           | Description    | Type           | Default        |
+| label            | Field Label      | String   |-|
+| labelColor       | Field Label Color     | String   | black            |
+| labelStyle       | Field Label Style     | Object   |-|
+| isRequired       | Display Asterisk Symbol| Boolean  | false            |
+| asteriskTextStyle   | Asterisk Symbol Style | Object   | { color: 'red', fontSize: 16 } |
+| Value            | Field Value      | String   |-|
+| onFocusBorderColor | Field Border Color on focus| String   | '#007AFE'|
 | isError          | To Display error | Boolean  | false            |
-+------------------+------------------+----------+------------------+
-| errorText        | Display Error    | String   |                  |
-|                  | Text             |          |                  |
-+------------------+------------------+----------+------------------+
+| errorText        | Display Error Text   | String   |-|
 | errorColor       | Error Text Color | String   | red              |
-+------------------+------------------+----------+------------------+
-| errorTextStyle   | Error Text Style | Object   | \-               |
-+------------------+------------------+----------+------------------+
-| err              | Error Container  | Object   | {                |
-| orContainerStyle | Style            |          | justifyContent:  |
-|                  |                  |          | \'center\', marg |
-|                  |                  |          | inLeft: \'1%\' } |
-+------------------+------------------+----------+------------------+
-| hintText         | Hint             | String   | \-               |
-+------------------+------------------+----------+------------------+
-| hintTextStyle    | Hint Style       | Object   | { color          |
-|                  |                  |          | : \'orange\', fo |
-|                  |                  |          | ntSize: 16, marg |
-|                  |                  |          | inLeft: \'2%\' } |
-+------------------+------------------+----------+------------------+
-| isSecureEntry    | To Set Sensetive | Boolean  | false            |
-|                  | Text Stay Secure |          |                  |
-+------------------+------------------+----------+------------------+
-| placeholder      | Field            | String   |                  |
-|                  | Placeholder      |          |                  |
-+------------------+------------------+----------+------------------+
+| errorTextStyle   | Error Text Style | Object   |-|
+| errorContainerStyle | Error Container Style | Object   | {justifyContent:'center', marginLeft: '1%' } |
+| hintText         | Hint             | String   |-|
+| hintTextStyle    | Hint Style       | Object   | { color: 'orange', fontSize: 16, marginLeft: '2%' } |
+| isSecureEntry    | To Set Sensetive Text Stay Secure | Boolean  | false|
+| placeholder      | Field Placeholder| String   |                  |
 | keyboardType     | Keyboard Type    | String   | default          |
-+------------------+------------------+----------+------------------+
-| maxLength        | Max Length Of    | Number   | null             |
-|                  | The Field        |          |                  |
-+------------------+------------------+----------+------------------+
-| is               | To Clear The     | Boolean  | false            |
-| ClearTextOnFocus | Text On Focus    |          |                  |
-+------------------+------------------+----------+------------------+
-| onChange         | Change Text      | Function | \-               |
-|                  | callback         |          |                  |
-+------------------+------------------+----------+------------------+
-| text             | Field Border     | String   | black            |
-| FieldBorderColor | Color            |          |                  |
-+------------------+------------------+----------+------------------+
-| textFieldStyle   |                  | Object   | {                |
-|                  |                  |          | c                |
-|                  |                  |          | olor: \'black\', |
-|                  |                  |          | padd             |
-|                  |                  |          | ingLeft: \'2%\', |
-|                  |                  |          | height: 40,      |
-|                  |                  |          | fontSize: 20,    |
-|                  |                  |          | padding          |
-|                  |                  |          | Vertical: Platfo |
-|                  |                  |          | rm.OS == \'andro |
-|                  |                  |          | id\' ? 0 : null} |
-+------------------+------------------+----------+------------------+
-| textFie          |                  | Object   | {                |
-| ldContainerStyle |                  |          | border           |
-|                  |                  |          | Color:\'black\', |
-|                  |                  |          | borderWidth: 1,  |
-|                  |                  |          | b                |
-|                  |                  |          | orderRadius: 10} |
-+------------------+------------------+----------+------------------+
-| headerStyle      |                  | Object   | {                |
-|                  |                  |          |                  |
-|                  |                  |          | alignT           |
-|                  |                  |          | ext: \'center\', |
-|                  |                  |          |                  |
-|                  |                  |          | width: \'100%\', |
-|                  |                  |          |                  |
-|                  |                  |          | flexDir          |
-|                  |                  |          | ection: \'row\', |
-|                  |                  |          |                  |
-|                  |                  |          | fle              |
-|                  |                  |          | xWrap: \'wrap\', |
-|                  |                  |          |                  |
-|                  |                  |          | marginVer        |
-|                  |                  |          | tical: \'0.5%\', |
-|                  |                  |          |                  |
-|                  |                  |          | pad              |
-|                  |                  |          | dingLeft: \'1%\' |
-|                  |                  |          |                  |
-|                  |                  |          | }                |
-+------------------+------------------+----------+------------------+
-| textInputProps   | Props for Text   | Props    |                  |
-|                  | Input            |          |                  |
-+------------------+------------------+----------+------------------+
+| maxLength        | Max Length Of The Field | Number   | null |
+| isClearTextOnFocus | To Clear The Text On Focus | Boolean  | false            |
+| onChange         | Change Text callback| Function |-|
+| text FieldBorderColor            | Field Border Color | String   | black            |
+| textFieldStyle   |                  | Object   | {color: 'black', paddingLeft: '2%', height: 40,fontSize: 20, paddingVertical: Platform.OS == 'android' ? 0 : null}                |
+| textFieldContainerStyle          |                  | Object   | {borderColor:'black', borderWidth: 1, borderRadius: 10}                |
+| headerStyle      |                  | Object   | {alignText: 'center', flexDirection: 'row',flexWrap: 'wrap', marginVertical: '0.5%',paddingLeft: '1%'}                |
+| textInputProps   | Props for Text Input  | Props    |                  |
+
 
 **IconTextField**
 ```
-import IconTextField from \'react-native- form-fields'
+import IconTextField from 'react-native- form-fields'
 
-const onChangeText = (text: string) =\> {
+const onChangeText = (text: string) => {
 
-    console.log(\'Field text = \',text);
+    console.log('Field text = ',text);
 
-setUserName(text);
+    setUserName(text);
 
   };
 
-\<IconTextField
+<IconTextField
 
-                  icon={{size: 20, name: \'female\', type: \'font-awesome\'}}
+   icon={{size: 20, name: 'female', type: 'font-awesome'}}
 
-                  value={this.state.userName}
+   value={this.state.userName}
 
-                  errorText={\'add text\'}
+   errorText='add text'
 
-                  isRequired={true}
+   isRequired={true}
 
-                  onChange={onChangeText}
+   onChange={onChangeText}
 
-                /\>
+/>
 ```
 
 **Properties**
 
-+------------------+------------------+----------+------------------+
-| name             | description      | type     | default          |
-+==================+==================+==========+==================+
-| icon             | Field Icon       | String   | { size: 20,      |
-|                  |                  |          | name: \'user\',  |
-|                  |                  |          | type: \          |
-|                  |                  |          | 'font-awesome\'} |
-+------------------+------------------+----------+------------------+
+
+| Name           | Description    | Type           | Default        |
+| icon             | Field Icon       | String   | { size: 20,name: 'user', type: 'font-awesome'}       |
 | iconColor        | Field Icon Color | String   | black            |
-+------------------+------------------+----------+------------------+
 | value            | Field Value      | String   |                  |
-+------------------+------------------+----------+------------------+
-| borderColor      | Field Border     | Object   | black            |
-|                  | Color            |          |                  |
-+------------------+------------------+----------+------------------+
-| isRequiredStyle  | Asterisk Symbol  | Object   |                  |
-|                  | Style            |          |                  |
-+------------------+------------------+----------+------------------+
+| borderColor      | Field Border Color    | Object   | black            |
+| isRequiredStyle  | Asterisk Symbol Style | Object   |                  |
 | defaultValue     | Default Value    | String   |                  |
-+------------------+------------------+----------+------------------+
 | isError          | To Display error | Boolean  | false            |
-+------------------+------------------+----------+------------------+
-| errorText        | Display Error    | String   |                  |
-|                  | Text             |          |                  |
-+------------------+------------------+----------+------------------+
+| errorText        | Display Error Text   | String   |                  |
 | errorColor       | Error Text Color | String   | red              |
-+------------------+------------------+----------+------------------+
-| errorTextStyle   | Error Text Style | Object   | { margi          |
-|                  |                  |          | nLeft: \'5%\', c |
-|                  |                  |          | olor: \'blue\' } |
-+------------------+------------------+----------+------------------+
-| isSecureEntry    | To Set Sensetive | Boolean  | false            |
-|                  | Text Stay Secure |          |                  |
-+------------------+------------------+----------+------------------+
-| placeholder      | Field            | String   |                  |
-|                  | Placeholder      |          |                  |
-+------------------+------------------+----------+------------------+
-| plac             | Placeholder Text | String   | grey             |
-| eholderTextColor | Color            |          |                  |
-+------------------+------------------+----------+------------------+
-| ma               | Main Container   | Object   | {                |
-| inContainerStyle | Style            |          |                  |
-|                  |                  |          | borderWidth: 1,  |
-|                  |                  |          |                  |
-|                  |                  |          | flexDir          |
-|                  |                  |          | ection: \'row\', |
-|                  |                  |          |                  |
-|                  |                  |          | b                |
-|                  |                  |          | orderRadius: 20, |
-|                  |                  |          |                  |
-|                  |                  |          | alignIt          |
-|                  |                  |          | ems: \'center\', |
-|                  |                  |          |                  |
-|                  |                  |          | height: 40,      |
-|                  |                  |          |                  |
-|                  |                  |          | padding: 8,      |
-|                  |                  |          |                  |
-|                  |                  |          | width: \'100%\'  |
-|                  |                  |          |                  |
-|                  |                  |          | }                |
-+------------------+------------------+----------+------------------+
-| ic               | Icon Container   | Object   | {                |
-| onContainerStyle | Style            |          |                  |
-|                  |                  |          | width:\'8%\',    |
-|                  |                  |          |                  |
-|                  |                  |          | marg             |
-|                  |                  |          | inRight: \'2%\', |
-|                  |                  |          |                  |
-|                  |                  |          | padding: 1,      |
-|                  |                  |          |                  |
-|                  |                  |          | }                |
-+------------------+------------------+----------+------------------+
-| textFie          | TextInput        | Object   | {width:\'88%\'}  |
-| ldContainerStyle | Container Style  |          |                  |
-+------------------+------------------+----------+------------------+
-| textInputStyle   | TextInput Style  | Object   | {padding:2,      |
-|                  |                  |          | c                |
-|                  |                  |          | olor: \'black\', |
-|                  |                  |          |                  |
-|                  |                  |          | \...P            |
-|                  |                  |          | latform.select({ |
-|                  |                  |          |                  |
-|                  |                  |          | androi           |
-|                  |                  |          | d: {height: 40}, |
-|                  |                  |          |                  |
-|                  |                  |          | }),}             |
-+------------------+------------------+----------+------------------+
-| onChange         | Change Text      | Function | \-               |
-|                  | callback         |          |                  |
-+------------------+------------------+----------+------------------+
+| errorTextStyle   | Error Text Style | Object   | { marginLeft: '5%', color: 'blue' }           |
+| isSecureEntry    | To Set Sensetive Text Stay Secure | Boolean  | false            |
+| placeholder      | Field Placeholder  | String   |                  |
+| placeholderTextColor | Placeholder Text Color| String   | grey             |
+| mainContainerStyle  | Main Container Style  | Object   | { borderWidth: 1, flexDirection: 'row',borderRadius: 20,alignItems: 'center', height: 40, padding: 8, width: '100%'} |
+| iconContainerStyle  | Icon Container Style  | Object   | {width:'8%',marginRight: '2%', padding: 1 }  |
+| textFieldContainerStyle  | TextInput  Container Style| Object   | {width:'88%'}  |
+| textInputStyle   | TextInput Style  | Object   | {padding:2,color: 'black',...Platform.select({android: {height: 40}})}             |
+| onChange         | Change Text callback | Function |-|
+
 
 **Custom Text Field**
 ```
@@ -600,64 +324,63 @@ Accessory views
 
 Helper text
 ```
-const onChangeText = (text: string) =\> {
+const onChangeText = (text: string) => {
 
-    console.log(\'Field text = \',text);
+    console.log('Field text = ',text);
 
-setFirstName(text);
+    setFirstName(text);
 
-  };
+};
 
-\<CustomTextField
+<CustomTextField
 
-                labelText={'First Name\'}
+   labelText='First Name'
 
-                errorMsg={this.state.firstNameErrorMsg}
+   errorMsg={this.state.firstNameErrorMsg}
 
-                onChange={onChangeText}
+   onChange={onChangeText}
 
-                defaultText=\'Mr.\'
+   defaultText='Mr.'
 
-                defaultTextPosition={right}
+   defaultTextPosition={right}
 
-                animationDuration={500}
+   animationDuration={500}
 
-                isRequired={true}
+   isRequired={true}
 
-                isMultiline={true}
+   isMultiline={true}
 
-                value={this.state.firstName}
+   value={this.state.firstName}
 
-              /\>
+/>
 ```
 
 **Properties**
 
-  name                          description                                       type       default
-  ----------------------------- ---------------------------------------------- -- ---------- ------------------------
-  isMultiline                   Allow Multiple Lines                              Boolean    false
-  defaultText                   Prefix or Suffix Text                             String     
-  defaultTextPosition           Position Of The Default Text                      String     left
-  value                         Field Value                                       String     
-  editable                      Set Field Editable                                Boolean    true
-  isRequired                    Display Asterisk Symbol                           Boolean    false
-  animationDuration             Animation Duration                                Number     20
-  isError                       To Display error                                  Boolean    false
-  errorText                     Display Error Text                                String     
-  errorColor                    Error Text Color                                  String     red
-  tintColor                     Field Color On Focus                              String     \'rgb(0,100,234)\'
-  rootColor                     Field Color When Not Focused                      String     \'rgba(0, 0, 0, .87)\'
-  textColor                     Text Color                                        String     \'rgba(0, 0, 0, .87)
-  clearTextOnFocus              Clear The Text When Focused                       Boolean    false
-  fontSize                      Font Size Of The Text Input When Not Focused      Number     16
-  errorFontSize                 Error Text Font Size                              Number     12
-  activeFontSize                Font Size Of The Text Input When Focused          Number     12
-  autoCapitalize                Capitalize Text,Sentences,Words,Charachters       String     'none'
-  characterLimit                Charachter Limit For The Text Field               Number     
-  inputContainerOverrideStyle   Set Input Container Style                         Object     
-  inputOverrideStyle            Set Text Input Style                              Object     
-  onChange                      Change Text callback                              Function   \-
-  textInputProps                Props for Text Input                              Props      
+ | Name           | Description    | Type           | Default        |
+  |isMultiline                   |Allow Multiple Lines                              |Boolean    |false|
+  |defaultText                   |Prefix or Suffix Text                             |String     |-|
+  |defaultTextPosition           |Position Of The Default Text                      |String     |left|
+  |value                         |Field Value                                       |String    | -|
+  |editable                      |Set Field Editable                                |Boolean    |true|
+  |isRequired                    |Display Asterisk Symbol                           |Boolean    |false|
+  |animationDuration             |Animation Duration                                |Number     |20|
+  |isError                       |To Display error                                  |Boolean    |false|
+  |errorText                     |Display Error Text                                |String    | -|
+  |errorColor                    |Error Text Color                                  |String     |red|
+  |tintColor                     |Field Color On Focus                              |String     |'rgb(0,100,234)'|
+  |rootColor                     |Field Color When Not Focused                      |String     |'rgba(0, 0, 0, .87)'|
+  |textColor                     |Text Color                                        |String     |'rgba(0, 0, 0, .87)|
+  |clearTextOnFocus              |Clear The Text When Focused                       |Boolean    |false|
+  |fontSize                      |Font Size Of The Text Input When Not Focused      |Number     |16|
+  |errorFontSize                 |Error Text Font Size                              |Number     |12|
+  |activeFontSize                |Font Size Of The Text Input When Focused          |Number     |12|
+  |autoCapitalize                |Capitalize Text,Sentences,Words,Charachters       |String     |'none'|
+  |characterLimit                |Charachter Limit For The Text Field               |Number     |-|
+  |inputContainerOverrideStyle   |Set Input Container Style                         |Object     |-|
+  |inputOverrideStyle            |Set Text Input Style                              |Object     |-|
+  |onChange                      |Change Text callback                              |Function   |-|
+  |textInputProps                |Props for Text Input                              |Props      |-|
 
 **Contribution**
 
