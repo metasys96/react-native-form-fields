@@ -1,0 +1,83 @@
+
+exports[`create snapshot 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "alignText": "center",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "marginVertical": "0.5%",
+        "paddingLeft": "1%",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "black",
+            "fontSize": 16,
+          }
+        }
+      >
+        
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "justifyContent": "center",
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "borderColor": "black",
+          "borderRadius": 10,
+          "borderWidth": 1,
+        },
+        undefined,
+      ]
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      clearTextOnFocus={false}
+      keyboardType="default"
+      maxLength={null}
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onFocus={[Function]}
+      placeholder=""
+      rejectResponderTermination={true}
+      secureTextEntry={false}
+      style={
+        Object {
+          "color": "black",
+          "fontSize": 20,
+          "height": 40,
+          "paddingLeft": "2%",
+          "paddingVertical": null,
+        }
+      }
+      testID="input"
+      underlineColorAndroid="transparent"
+      value=""
+    />
+  </View>
+  <Text>
+     
+  </Text>
+</View>
+`;
