@@ -406,7 +406,7 @@ Copyright and License
 
 ## Author
 
-MetaSys Software Pvt. Ltd. / [@metasys96](https://github.com/metasys96)
+ [MetaSys Software Pvt. Ltd.](https://github.com/metasys96)
 
 ## License
 
