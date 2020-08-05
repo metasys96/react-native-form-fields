@@ -55,7 +55,7 @@ import {
 ```
 
 ## Screenshot
-<img src="https://raw.githubusercontent.com/metasys96/react-native-form-fields/master/screenshots/image1.png" width="60" height="50"/>
+<img src="https://raw.githubusercontent.com/metasys96/react-native-form-fields/master/screenshots/image1.png" width="600" height="500"/>
 
 **Getting started**
 
