@@ -1,7 +1,7 @@
 {
   "name": "react-native-form-fields",
   "version": "1.0.0",
-  "description": "NPM Package -- Documentation",
+  "description": "",
   "main": "index.js",
   "dependencies": {
     "lodash": "^4.17.19",
