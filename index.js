@@ -1,14 +1,14 @@
-import CustomTextField from "react-native-npm/src/components/CustomTextField";
-import DropDown from "react-native-npm/src/components/DropDown";
-import CheckBox from "react-native-npm/src/components/CheckBox";
-import RadioButton from "react-native-npm/src/components/RadioButton";
-import IconTextField from "react-native-npm/src/components/IconTextField";
-import BasicTextField from "react-native-npm/src/components/BasicTextField";
+import CustomTextField from "./src/components/CustomTextField";
+import DropDown from "./src/components/DropDown";
+import CheckBox from "./src/components/CheckBox";
+import RadioButton from "./src/components/RadioButton";
+import IconTextField from "./src/components/IconTextField";
+import BasicTextField from "./src/components/BasicTextField";
 export {
   CustomTextField,
   DropDown,
   RadioButton,
   CheckBox,
   IconTextField,
-  BasicTextField
+  BasicTextField,
 };
