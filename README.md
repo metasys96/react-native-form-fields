@@ -1,7 +1,5 @@
 # react-native-form-fields
 
-Documentation
-
 Cross-platform development is now an essential aspect of software
 development. Node Packet Manager, the online repository is a go to site
 for React Programmers. This is MetaSys' contribution based on challenges
@@ -303,7 +301,7 @@ const onChangeText = (text: string) => {
 **Custom Text Field**
 
 ```
-import CustomTextField from \'react-native-form-fields'
+import {CustomTextField} from 'react-native-form-fields'
 ```
 
 **Features**
