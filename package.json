@@ -1,0 +1,36 @@
+{
+  "name": "@metasys96/react-native-form-fields",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^4.17.19",
+    "react-native-elements": "^1.2.7",
+    "react-native-vector-icons": "^6.6.0"
+  },
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.58.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metasys96/react-native-form-fields"
+  },
+  "keywords": [
+    "facebook",
+    "react",
+    "react native",
+    "components",
+    "form fields",
+    "textfield",
+    "radiobutton",
+    "checkbox",
+    "custom textfield",
+    "dropdownlist",
+    "icon textfield"
+  ],
+  "author": "MetaSys Software Pvt. Ltd",
+  "license": "ISC"
+}
